@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Pets World</title>
+        <link rel="icon" href="pet_store.jpg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="page1.css" rel="stylesheet"/>
+        <script src="page1.js"></script>
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Register Here
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label>FirstName*</label>
+                            <input id="fname" class="form-control" type="text" 
+                            onblur="validateFname()"/>
+                            <p id="fout"></p>
+                        </div>
+                        <div class="form-group">
+                            <label>LastName*</label>
+                            <input id="lname" class="form-control" type="text"
+                            onblur="validateLname()"/>
+                            <p id="lout"></p>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Email*</label>
+                                <input id="email" class="form-control" type="text"
+                                onblur="validateEmail()"/>
+                                <p id="eout"></p>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Confirm Email</label>
+                                <input id="cemail" class="form-control" type="text"/>
+                                <p id="ceout"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Password</label>
+                                <input id="password" class="form-control" type="password"
+                                oninput="validatePwd()"/>
+                                <p id="pout"></p>
+                                <div id="ppout"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Confirm Password</label>
+                                <input id="cpassword" class="form-control" type="password"
+                                onblur="validateCPwd()"/>
+                                <p id="cpout"></p>
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <label>Number</label>
+                            <input id="pno" class="form-control" type="tel" maxlength="10"
+                            onblur="validateph()" />
+                            <p id="numout"></p> 
+                        </div> 
+                        <button  type="button" class="btn btn-success">submit</button> 
+                        <button  type="button" class="btn btn-danger">Reset</button>
+                        
+
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
