@@ -17,6 +17,7 @@
                     Register Here
                 </div>
                 <div class="panel-body">
+                    <!--/////REGISTER PAGE STARTS HERE*///////-->
                     <form>
                         <div class="form-group">
                             <label>FirstName*</label>
@@ -64,8 +65,60 @@
                             onblur="validateph()" />
                             <p id="numout"></p> 
                         </div> 
-                        <button  type="button" class="btn btn-success">submit</button> 
-                        <button  type="button" class="btn btn-danger">Reset</button>
+                        <button type="button" class="btn btn-success">Submit</button> 
+
+                         <!--/////REGISTER PAGE ENDS HERE*///////-->
+
+                        <!--/////LOGIN PAGE STARTS HERE*///////-->
+
+
+                        <button type="button" class="btn btn-warning" data-target="#login" data-toggle="modal">
+                           Login 
+                        </button>
+                        <div id="login" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Login Here</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                           <div class="form-group">
+                                                <label>Email*</label>
+                                                <input id="email" class="form-control" type="text"
+                                                onblur="validateEmail()"/>
+                                                <p id="eout"></p>
+                                            </div>
+                                            
+                                     
+                                    
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input id="password" class="form-control" type="password"
+                                                oninput="validatePwd()"/>
+                                                <p id="pout"></p>
+                                                <div id="ppout"></div>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btn btn-success" data-dismiss="modal">
+                                                    Submit
+                                                </button>
+    
+                                            </div>
+                                            
+                                        </div>
+                                                
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--/////LOGIN PAGE ENDS HERE*///////-->
                         
 
                     </form>
